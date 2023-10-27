@@ -11,7 +11,8 @@
     }],
     "permissions": [
         "activeTab",
-        "nativeMessaging"
+        "storage",
+        "scripting"
     ],
     "action": {
         "default_popup": "pages/popup.html",

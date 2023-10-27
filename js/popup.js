@@ -1,4 +1,7 @@
-document.getElementById('connect').addEventListener('click', function() {
-    // TODO: 实现连接到硬件的逻辑，如果需要的话
-    console.log("设备连接的逻辑")
+$(document).ready(function () {
+    // 处理按钮点击事件
+    $("#fullPwd").click(function () {
+        chrome.runtime.sendMessage({ action: "fillCredentials" });
+    });
 });
+
