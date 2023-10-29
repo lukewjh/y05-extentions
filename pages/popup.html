@@ -3,20 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>宇起</title>
+    <link href="../css/popup.css" rel="stylesheet">
     <script src="../js/jquery-3.5.1.js"></script>
     <link href="../bootstrap-3.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="../bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
     
-    <link href="../css/popup.css" rel="stylesheet">
     <script src="../js/popup.js"></script>
     
 </head>
 <body>
 
-    <div class="container">
+    <!-- <div class="container">
         <h1>Hello, Bootstrap in Chrome Extension!</h1>
         <button id="fullPwd" class="btn btn-primary">Click Me</button>
-    </div>
+    </div> -->
 
+    <div class="container-fluid page-content">
+        <!-- 内容区域 -->
+        <div id="main-content">
+            <!-- 这里是通过JS动态加载的内容 -->
+        </div>
+    </div>
+      
+    
+      
+    <nav class="navbar navbar-default navbar-fixed-bottom footer-nav">
+        <div class="container">
+            <!-- 底部导航链接 -->
+            <ul class="nav navbar-nav">
+                <li><a href="" data-value="index">首页</a></li>
+                <li><a href="" data-value="profile">我的</a></li>
+            </ul>
+        </div>
+    </nav>
+      
 </body>
 </html>
