@@ -3,8 +3,13 @@ body{
     height: 600px;
 }
 
+.container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
 .page-content {
-    padding: 20px;
+    /* padding: 20px; */
+    /* padding: 0 0 20px 0; */
     margin-bottom: 60px; /* 留出底部导航栏的空间 */
 }
 .footer-nav {

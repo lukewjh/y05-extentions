@@ -10,6 +10,10 @@ $(document).ready(function () {
 
     // 处理导航链接的点击事件
     $('.navbar-nav a').click(function(event) {
+        $('.navbar-nav li').removeClass("active");
+        //导航栏活跃状态
+        var liNode = $(this).parent();
+        liNode.addClass("active");
         //因为是a标签，需要组织浏览器默认的跳转行为
         event.preventDefault();
         var pageId = $(this).attr('data-value');
